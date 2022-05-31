@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+.heading {
+    font-weight: 800;
+    font-size: 22px;
+    color: black;
+    display: block;
+    text-align: center
+}
