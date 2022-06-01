@@ -18,5 +18,11 @@ app.get('/', (req, res) => {
   });
   rollbar.log("Hello world!");
 
+  try {
+    nonExistentFunction();
+  } catch (error) {
+    console.error(error);
+  }
+  
 const port = process.env.PORT || 4000
 app.listen(port, () => console.log(`${port}`))
